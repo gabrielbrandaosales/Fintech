@@ -11,7 +11,7 @@ type IDataContext = {
   setFinal: React.Dispatch<React.SetStateAction<string>>;
 };
 
-type IVenda = {
+export type IVenda = {
   id: string;
   nome: string;
   preco: number;
@@ -35,8 +35,6 @@ const getDate = (n: number) => {
   const dd = String(date.getDate()).padStart(2, '0');
   const mm = String(date.getMonth() + 1).padStart(2, '0');
   const yyyy = date.getFullYear();
-  console.log(`${yyyy}-${mm}-${dd}`);
-
   return `${yyyy}-${mm}-${dd}`;
 };
 
