@@ -56,15 +56,19 @@ ul {
 .bg-1 {
   background: var(--color-1);
 }
+
 .bg-2 {
   background: var(--color-2);
 }
+
 .bg-3 {
   background: var(--color-3);
 }
+
 .bg-4 {
   background: var(--color-4);
 }
+
 .bg-5 {
   background: var(--color-5);
 }

@@ -14,7 +14,7 @@ type IVenda = {
   status: 'pago' | 'processando' | 'falha';
   pagamento: 'boleto' | 'pix' | 'cartao';
   data: string;
-  paracelas: number | null;
+  parcelas: number | null;
 };
 
 const DataContext = React.createContext<IDataContext | null>(null);
@@ -27,7 +27,7 @@ export const useData = () => {
 
 export const DataContextProvider = ({ children }: React.PropsWithChildren) => {
   const { data, loading, error } = useFetch<IVenda[]>(
-    'https://data.origamid.dev/vendas',
+    'https://data.origamid.dev/vendas/',
   );
 
   return (
